@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main >
+        <!--title and its decription div -->
+        <div>
+          <h1 id="title" >Survey Form</h1>
+          <p id="description">
+              <em>It is a survey form</em></p>
+        </div>
+
+         <!--form div-->
+      <div id="form">
+         <!--form -->
+        <form id="survey-form">
+           <!--form input field for name-->
+          <div >
+          <label id="name-label" for="name-label">Enter your name</label><br>
+          <input type="name" id="name" placeholder="enter your name" required /><br>
+        </div>
+           <!--form input field for email-->
+          <div>
+           <label id="email-label" for="email-label">Enter your email</label><br>
+          <input type="email" id="email" placeholder="enter email" required ><br>
+          </div>
+            <!--form input field for number-->
+          <div >
+           <label id="number-label" for="number-label">Enter your number</label><br>
+         <input type="number" id="number" placeholder="enter your number" required  max="100" min="1"  /><br>
+         </div>
+          
+          <!--form select field for current role of user-->
+          <div >
+          <label for="selector" >Which option best describes your current role?</label><br>
+           <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+           
+          </select>
+          </div>
+          
+           <!--form radio buttons user in Ui field or not-->
+          <div>
+            <p>Are you in UI Practice?</p>
+                <label>
+                    <input type="radio" value="Yes" name="user" />Yes
+                </label>
+              <br>
+
+            <label>
+                <input type="radio" value="No"  name="user" />No
+            </label>
+            <br>
+            
+            <label>
+                <input type="radio" value="Not Sure"  name="user" />Not Sure
+            </label>
+            <br>
+          </div>
+          
+
+           <!--form checkbox yuser can select multiple values -->
+          <div>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <br>
+              <label>
+                <input type="checkbox" value="Front-end" name="user-checkbox" value="Front-end Projects" />Front-end Projects
+              </label>
+              <br>
+             <label>
+                <input type="checkbox" value="Back-end" name="user-checkbox" value="Front-end Projects" />Back-end Projects
+              </label>
+              <br>
+             <label>
+                <input type="checkbox" value="Data Visualization" name="user-checkbox"  />Data Visualization
+              </label>
+              <br>
+            </div>
+          
+         <!--form textarea field  div for user comment-->
+        <div>
+          <p>Any comments or suggestions?</p>
+            <textarea 
+              id="text"
+              name="comment"
+              cols="50"
+              rows="10"
+             required
+              placeholder="Please give feedback... " ></textarea><br>
+        </div>
+
+
+
+
+         <!--form  submit button div -->
+        <div>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+        </form>
+
+      </div>
+      
+    </main>
+</body>
+</html>
